@@ -1,0 +1,12 @@
+<!-- <button ng-click="reload()" class="btn btn-primary">Reload Images</button> -->
+<div masonry preserve-order>
+	<div class="masonry-brick col-lg-3 col-md-3 col-sm-6 col-xs-6" ng-repeat="link in links" style="margin-top: 20px;">
+		<!-- <div class="panel panel-default"> -->
+			<!-- <div class="panel-heading"><a ng-href="#/{{link}}">View Image</a></div> -->
+			<!-- <div class="panel-body"> -->
+				<!-- Simpier layout -->
+				<a ng-href="#/{{ link.name }}"><img class="img-responsive img-thumbnail" ng-src="{{ link.src }}" alt="Image"></a>
+			<!-- </div> -->
+		</div>
+	</div>
+</div>
